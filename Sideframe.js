@@ -1,0 +1,63 @@
++function($){
+    'use strict';
+    var defaults={
+        direction:"left",
+        toggle:false,
+        doubleTapToGo:false,
+    }
+    $.fn.sideframe=function(options) {
+        this.options = $.extend({}, defaults, options);
+        if (!this.options.doubleTapToGo) {
+            if (this.options.direction == "left") {
+                $(this).css("float", "left");
+            } else if (this.options.direction == "right") {
+                $(this).css("float", "right");
+            }
+            if (!this.options.toggle) {
+                $(".menu h3").click(function () {
+                    $(this).next().slideDown();
+                    $(".menu h3").not($(this)).each(function () {
+                        $(this).next().slideUp(500);
+                    });
+                });
+            } else {
+                $(".menu h3").click(function () {
+                    if ($(this).next().css("display") == "none") {
+                        $(this).next().slideDown();
+                    } else {
+                        $(this).next().slideUp(500);
+                    }
+                    $(".menu h3").not($(this)).each(function () {
+                        $(this).next().slideUp(500);
+                    });
+                });
+            }
+        }else {
+            if (this.options.direction == "left") {
+                $(this).css("float", "left");
+            } else if (this.options.direction == "right") {
+                $(this).css("float", "right");
+            }
+            if (!this.options.toggle) {
+                $(".menu h3").click(function () {
+                    $(this).next().slideDown();
+                    //$(".menu h3").not($(this)).each(function () {
+                    //    $(this).next().slideUp(500);
+                    //});
+                });
+            } else {
+                $(".menu h3").click(function () {
+                    if ($(this).next().css("display") == "none") {
+                        $(this).next().slideDown();
+                    } else {
+                        $(this).next().slideUp(500);
+                    }
+                    //$(".menu h3").not($(this)).each(function () {
+                    //    $(this).next().slideUp(500);
+                    //});
+                });
+            }
+        }
+    }
+
+}(jQuery);
