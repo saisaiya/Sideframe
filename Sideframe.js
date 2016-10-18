@@ -41,9 +41,6 @@
             if (!this.options.toggle) {
                 $(".menu h3").click(function () {
                     $(this).next().slideDown();
-                    //$(".menu h3").not($(this)).each(function () {
-                    //    $(this).next().slideUp(500);
-                    //});
                 });
             } else {
                 $(".menu h3").click(function () {
@@ -52,9 +49,7 @@
                     } else {
                         $(this).next().slideUp(500);
                     }
-                    //$(".menu h3").not($(this)).each(function () {
-                    //    $(this).next().slideUp(500);
-                    //});
+
                 });
             }
         }
