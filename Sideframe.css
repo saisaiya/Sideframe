@@ -1,0 +1,44 @@
+body,h3,p{
+    margin: 0;
+}
+.menu{
+    border-bottom: 1px solid black;
+}
+.menu h3{
+    width:100%;
+    background-color:black;
+    padding:10px 20px;
+    box-sizing:border-box;
+}
+.slideGroup  a{
+    text-decoration:none;
+    color: #f5deb3;
+}
+.slideGroup  a:hover {
+    text-decoration: none;
+    color:white;
+}
+.option{
+    width:100%;
+    border:1px solid #ccc;
+    box-sizing:border-box;
+    display:none;
+    background-color:rgba(0,0,0,0.7);
+    color: #f5deb3;
+
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+    padding: 10px;
+    border: 1px solid white;
+}
+li:hover{
+    color: white;
+}
+.slideGroup{
+    float: right;
+}
