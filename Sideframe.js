@@ -14,20 +14,20 @@
                 $(this).css("float", "right");
             }
             if (!this.options.toggle) {
-                $(".menu h3").click(function () {
+                $($(this).selector+" .menu h3").click(function () {
                     $(this).next().slideDown();
-                    $(".menu h3").not($(this)).each(function () {
+                    $($(this).selector+" .menu h3").not($(this)).each(function () {
                         $(this).next().slideUp(500);
                     });
                 });
             } else {
-                $(".menu h3").click(function () {
+                $($(this).selector+" .menu h3").click(function () {
                     if ($(this).next().css("display") == "none") {
                         $(this).next().slideDown();
                     } else {
                         $(this).next().slideUp(500);
                     }
-                    $(".menu h3").not($(this)).each(function () {
+                    $($(this).selector+" .menu h3").not($(this)).each(function () {
                         $(this).next().slideUp(500);
                     });
                 });
@@ -39,11 +39,11 @@
                 $(this).css("float", "right");
             }
             if (!this.options.toggle) {
-                $(".menu h3").click(function () {
+                $($(this).selector+" .menu h3").click(function () {
                     $(this).next().slideDown();
                 });
             } else {
-                $(".menu h3").click(function () {
+                $($(this).selector+" .menu h3").click(function () {
                     if ($(this).next().css("display") == "none") {
                         $(this).next().slideDown();
                     } else {
