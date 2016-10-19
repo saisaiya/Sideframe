@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Sideframe.css">
+    <script src="http://cdn.bootcss.com/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdn.bootcss.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="Sideframe.js"></script>
+    <title>Document</title>
+    <style>
+        .jumbotron {
+            margin-top: -30px;
+            color: white;
+            background: linear-gradient(45deg, #cc33cc 0%, #cc66cc 50%, #ff99ff 100%);
+        }
+
+        .jumbotron h1 {
+            margin-left: 40px;
+            text-shadow: 0 0 1px #999,
+            1px 1px 1px #888,
+            2px 2px 1px #777,
+            3px 3px 1px #666,
+            4px 4px 1px #555,
+            5px 5px 1px #444;
+        }
+        .panel {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+<div class="jumbotron">
+    <h1>SlideFrame</h1>
+</div>
+<div class="container">
+    <div class="slideGroup slideGroup1 col-md-3">
+        <div class="menu">
+            <h3>menu1</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+            <h3>menu2</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+            <h3>menu3</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <p class="h5">通过<code>direction</code>，<code>toggle</code>，<code>doubleTapToGo</code>这几个值的改变，展现出不同样式的菜单栏</p>
+            <div class="panel panel-default">
+                <div class="panel-heading">CODE</div>
+                <div class="panel-body">
+                    $(function(){</br>&nbsp;&nbsp;&nbsp; $(".slideGroup slideGroup1").sideframe({</br>&nbsp;&nbsp;&nbsp;
+                    <code>direction</code>:"left",</br>&nbsp;&nbsp;&nbsp;
+                    <code>toggle</code>:false,</br>&nbsp;&nbsp;&nbsp;
+                    <code>doubleTapToGo</code>:false,</br>&nbsp;&nbsp;});</br>&nbsp;});
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideGroup slideGroup2 col-md-3">
+        <div class="menu">
+            <h3>menu1</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+            <h3>menu2</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+            <h3>menu3</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <p class="h5">通过<code>direction</code>，<code>toggle</code>，<code>doubleTapToGo</code>这几个值的改变，展现出不同样式的菜单栏</p>
+            <div class="panel panel-default">
+                <div class="panel-heading">CODE</div>
+                <div class="panel-body">
+                    $(function(){</br>&nbsp;&nbsp;&nbsp; $(".slideGroup slideGroup1").sideframe({</br>&nbsp;&nbsp;&nbsp;
+                    <code>direction</code>:"right",</br>&nbsp;&nbsp;&nbsp;
+                    <code>toggle</code>:true,</br>&nbsp;&nbsp;&nbsp;
+                    <code>doubleTapToGo</code>:true,</br>&nbsp;&nbsp;});</br>&nbsp;});
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slideGroup slideGroup3 col-md-3">
+        <div class="menu">
+            <h3>muen1</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+            <h3>menu2</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+            <h3>menu3</h3>
+            <div class="option">
+                <ul>
+                    <li>option1<>
+                    <li>option2<>
+                    <li>option3<>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-7">
+            <p class="h5">通过<code>direction</code>，<code>toggle</code>，<code>doubleTapToGo</code>这几个值的改变，展现出不同样式的菜单栏</p>
+            <div class="panel panel-default">
+                <div class="panel-heading">CODE</div>
+                <div class="panel-body">
+                    $(function(){</br>&nbsp;&nbsp;&nbsp; $(".slideGroup slideGroup1").sideframe({</br>&nbsp;&nbsp;&nbsp;
+                    <code>direction</code>:"right",</br>&nbsp;&nbsp;&nbsp;
+                    <code>toggle</code>:false,</br>&nbsp;&nbsp;&nbsp;
+                    <code>doubleTapToGo</code>:true,</br>&nbsp;&nbsp;});</br>&nbsp;});
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    $(function(){
+        $(".slideGroup1").sideframe({
+            direction:"left",
+            toggle:false,
+            doubleTapToGo:false,
+        });
+
+        $(".slideGroup2").sideframe({
+            direction:"right",
+            toggle:true,
+            doubleTapToGo:true,
+        });
+
+        $(".slideGroup3").sideframe({
+            direction:"right",
+            toggle:false,
+            doubleTapToGo:true,
+        });
+    });
+
+
+</script>
+</html>
