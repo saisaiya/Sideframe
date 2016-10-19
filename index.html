@@ -67,7 +67,7 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="h5">通过<code>direction</code>，<code>toggle</code>，<code>doubleTapToGo</code>这几个值的改变，展现出不同样式的菜单栏</p>
+            <p class="h5">此时三个属性均是默认值，<code>direction</code>属性值为<code>left</code>，此时为左侧边菜单。<code>toggle</code>为<code>false</code>,单点菜单时只有下拉动作。<code>doubleTapToGo</code>为<code>false</code>，菜单之间出现互斥，不能同时下拉菜单。</p>
             <div class="panel panel-default">
                 <div class="panel-heading">CODE</div>
                 <div class="panel-body">
@@ -111,7 +111,7 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="h5">通过<code>direction</code>，<code>toggle</code>，<code>doubleTapToGo</code>这几个值的改变，展现出不同样式的菜单栏</p>
+            <p class="h5"><code>direction</code>属性值为<code>right</code>,此时为右侧边菜单。<code>toggle</code>为<code>true</code>，单点菜单可以自由操控，有下拉和上拉两个动作。<code>doubleTapToGo</code>为<code>true</code>,菜单之间不发生互斥，可以同时打开菜单。</p>
             <div class="panel panel-default">
                 <div class="panel-heading">CODE</div>
                 <div class="panel-body">
@@ -155,14 +155,14 @@
 
     <div class="row">
         <div class="col-md-7">
-            <p class="h5">通过<code>direction</code>，<code>toggle</code>，<code>doubleTapToGo</code>这几个值的改变，展现出不同样式的菜单栏</p>
+            <p class="h5"><code>direction</code>属性值为<code>right</code>，此时为右侧边菜单。<code>toggle</code>为<code>true</code>,单点菜单可以自由操控，有下拉和上拉两个动作。<code>doubleTapToGo</code>为<code>false</code>，菜单之间出现互斥，不能同时下拉菜单。</p>
             <div class="panel panel-default">
                 <div class="panel-heading">CODE</div>
                 <div class="panel-body">
                     $(function(){</br>&nbsp;&nbsp;&nbsp; $(".slideGroup slideGroup1").sideframe({</br>&nbsp;&nbsp;&nbsp;
                     <code>direction</code>:"right",</br>&nbsp;&nbsp;&nbsp;
-                    <code>toggle</code>:false,</br>&nbsp;&nbsp;&nbsp;
-                    <code>doubleTapToGo</code>:true,</br>&nbsp;&nbsp;});</br>&nbsp;});
+                    <code>toggle</code>:true,</br>&nbsp;&nbsp;&nbsp;
+                    <code>doubleTapToGo</code>:false,</br>&nbsp;&nbsp;});</br>&nbsp;});
                 </div>
             </div>
         </div>
@@ -185,8 +185,8 @@
 
         $(".slideGroup3").sideframe({
             direction:"right",
-            toggle:false,
-            doubleTapToGo:true,
+            toggle:true,
+            doubleTapToGo:false,
         });
     });
 
