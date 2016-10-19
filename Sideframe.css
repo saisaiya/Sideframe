@@ -10,15 +10,12 @@ body,h3,p{
     padding:10px 20px;
     box-sizing:border-box;
     border: 1px solid #ccc;
-}
-.slideGroup  a{
-    text-decoration:none;
-    color: #f5deb3;
-}
-.slideGroup  a:hover {
-    text-decoration: none;
     color:white;
 }
+.menu h3:hover{
+    color:#cccccc;
+}
+
 .option{
     width:100%;
     border:1px solid #ccc;
