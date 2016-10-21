@@ -14,22 +14,22 @@
                 $(this).css("float", "right");
             }
             if (!this.options.toggle) {
-                $($(this).selector+" .menu h3").click(function () {
+                $($(this).find(" .menu h3")).click(function () {
                     $(this).next().slideDown();
-                    $($(this).selector+" .menu h3").not($(this)).each(function () {
+                    $($(this).parent().parent().find(" .menu h3")).not($(this)).each(function () {
                         $(this).next().slideUp(500);
                     });
                 });
             } else {
-                $($(this).selector+" .menu h3").click(function () {
+                $($(this).find(" .menu h3")).click(function () {
                     if ($(this).next().css("display") == "none") {
                         $(this).next().slideDown();
+                        $($(this).parent().parent().find(" .menu h3")).not($(this)).each(function () {
+                            $(this).next().slideUp(500);
+                        });
                     } else {
                         $(this).next().slideUp(500);
                     }
-                    $($(this).selector+" .menu h3").not($(this)).each(function () {
-                        $(this).next().slideUp(500);
-                    });
                 });
             }
         }else {
@@ -39,11 +39,12 @@
                 $(this).css("float", "right");
             }
             if (!this.options.toggle) {
-                $($(this).selector+" .menu h3").click(function () {
+                $($(this).find(" .menu h3")).click(function () {
                     $(this).next().slideDown();
+
                 });
             } else {
-                $($(this).selector+" .menu h3").click(function () {
+                $($(this).find(" .menu h3")).click(function () {
                     if ($(this).next().css("display") == "none") {
                         $(this).next().slideDown();
                     } else {
